@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Iceberg');
+.navbar{
+	padding: 20px;
+}
+.is-rounded{
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	border-radius: 20px;
+	padding-left: 1em;
+    padding-right: 1em;
+    font-size: 18px;
+
+}
+.is-rounded {
+    background-color: transparent;
+    border-color: #8C43FF;
+    border-width: .1em;
+    color: #8C43FF;
+
+}
+.btn.is-rounded:hover
+{
+background-color:#8C43FF;
+color:white;
+border-color: #8C43FF;
+}
+.column.is-center{
+	padding-top: 100px;
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 5rem 2rem;
+}
+.columns.is-centered {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.title{
+	font-family: 'Righteous', cursive; 
+}
+.subtitle{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+img.is-bottom{
+    display: block;
+    margin: 0 auto;
+}
+.hero-foot img.is-bottom {
+    
+    height: auto;
+    max-width: 100%;
+}
+.hero-foot {
+    padding-top: 6rem;
+}
+.has-text-centered {
+    text-align: center !important;
+}
+.section.is-primary {
+    background-color: #8C43FF;
+    color: #fff;
+}
+.section.is-long {
+    padding-bottom: 14rem;
+}
+.section {
+    padding: 5rem 1.5rem;
+    display: block;
+}
+.section.skills {
+    margin-top: -14rem;
+    padding-bottom: 1rem;
+}
+.section.skills .box {
+    padding: 0;
+}
+.is-heading{
+    font-family: 'Iceberg', cursive;
+}
+.is-sub-heading{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.rounded{
+    padding-top: 2rem;
+}
+.columns{
+    box-shadow: 1px;
+    border-color: black;
+}
+.box {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+    color: #293347;
+    display: block;
+}
+.headingss{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.is-bos-padding{
+    padding: 6rem;
+}
+.image-box{
+    border-radius: 20px;
+}
+
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+   .title {
+    font-family: 'Righteous', cursive;
+    font-size: 27px;
+}
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .title {
+    font-family: 'Righteous', cursive;
+    font-size: 29px;
+}
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .title {
+    font-family: 'Righteous', cursive;
+    font-size: 40px; 
+}
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .title {
+    font-family: 'Righteous', cursive;
+    font-size: 45px; 
+    }
+    .hero-foot img.is-bottom {
+    margin-bottom: -0.45rem;
+    max-width: 860px;
+}
+@media screen and (min-width: 1088px){
+.section.is-medium {
+    padding: 9rem 1.5rem;
+}
+}
+
+@media screen and (min-width: 769px){
+.section.is-long {
+    padding-bottom: 16rem;
+}
+.container.is-narrow {
+    max-width: 1200px;
+}
+}
+
+@media screen and (min-width: 1472px){
+.container {
+    max-width: 1344px;
+    width: 1344px;
+}
+}
+
+@media screen and (min-width: 1280px){
+.container {
+    max-width: 1152px;
+    width: 1152px;
+}
+}
+
+@media screen and (min-width: 1088px){
+.container {
+    max-width: 960px;
+    width: 960px;
+}
+}
+

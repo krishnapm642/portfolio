@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+
+  <div class="navebar navbar-brand"><a class="navbar-item" href="{% url 'indexclass' %}"><img src="{% static 'posts/icon.png' %}" alt="Krishna Prasad" height="48"></a></div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto pl-5 pb-3">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% static 'posts/resume.pdf' %}">Resume</a>
+      </li>    
+    </ul>
+    <div class="navbar-item">
+              <p class="control"><a class="btn btn-outline-primary is-rounded" href="#contact" id="is-rounded"><span>Blog</span></a></p>
+              
+    </div>
+  </div>
+  </div>
+</nav>
+</div>
+
+
