@@ -21,12 +21,14 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 from django.urls import path, include
-import post
+import post, blogs
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('post.urls')),
+    path('blog/', include('blogs.urls')),
+    path('tinymce/', include('tinymce.urls')),
 ]
 
 if settings.DEBUG :

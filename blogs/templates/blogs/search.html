@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+ <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="posts-listing col-lg-8"> 
+          <div class="container">
+          <div class="row">
+          	<div class="text-center">
+          		<h2>Here is Your search results</h2>
+          	</div>
+          </div>
+          <br />
+            <div class="row">
+              <!-- post             -->
+
+              {% for query in queryset %}
+              <div class="post col-xl-6">
+                <div class="post-thumbnail"><a href="{{ query.get_absolute_url  }}"><img src="{% static 'img/blog-post-2.jpg' %}" alt="..." class="img-fluid"></a></div>
+                <div class="post-details">
+                  <div class="post-meta d-flex justify-content-between">
+                    <div class="date meta-last">20 May | 2016</div>
+                    <div class="category">
+                    {% for cat in query.categories.all %}
+                    <a href="#">{{ cat }}</a>
+                    {% endfor %}
+                    </div>
+                  </div><a href="{{ query.get_absolute_url  }}">
+                    <h3 class="h4">{{ query.title }}</h3></a>
+                  <p class="text-muted">{{ query.overview }}</p>
+                  <div class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                      <div class="avatar"><img src="{{ query.author.profilepic.url }}" alt="..." class="img-fluid"></div>
+                      <div class="title"><span>{{ query.auther.user.username }}</span></div></a>
+                    <div class="date"><i class="icon-clock"></i>{{ query.timestamp | timesince }} ago</div>
+                    <div class="comments meta-last"><i class="icon-comment"></i>{{ query.comment_count }}</div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+              <!-- post    -->
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+
+
+{% endblock %}
